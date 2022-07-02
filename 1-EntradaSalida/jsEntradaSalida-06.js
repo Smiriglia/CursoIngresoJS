@@ -1,9 +1,23 @@
-/*
-Debemos lograr tomar Los numeros por ID ,
-transformarlos a enteros (parseInt) y Sumarlos.
-mostrar el resulto por medio de "ALERT"*/
 function sumar()
 {
-	alert("ok");
+	/*
+	Proposito:
+		-Debemos lograr tomar Los numeros por ID ,
+		transformarlos a enteros (parseInt) y Sumarlos.
+		mostrar el resulto por medio de "ALERT".
+	
+	Precondicion:
+		-Ninguna.
+	*/
+
+	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
+	let num1 = parseInt(txtIdNumeroUno.value);
+	let num2 = parseInt(txtIdNumeroDos.value);
+
+	//Sumamos los 2 valores obtenidos anteriormente.
+	resultado = num1 + num2;
+
+	//Imprime el resultado en pantalla
+	alert(`La suma da como resultado: ${resultado}`);
 }
 
