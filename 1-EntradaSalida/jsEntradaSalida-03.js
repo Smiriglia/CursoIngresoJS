@@ -8,6 +8,10 @@ function mostrar()
 	Precondicion:
 		-Ninguna
 	*/
-	let nombreIngresado = txtIdNombre.value;//Toma el dato de la textbox y lo almacena en una variable
+
+	//Toma el dato de la textbox y lo almacena en una variable
+	let nombreIngresado = document.getElementById("txtIdNombre").value;
+
+	//Imprime la informacion recibida en pantalla
 	alert(nombreIngresado);
 }
