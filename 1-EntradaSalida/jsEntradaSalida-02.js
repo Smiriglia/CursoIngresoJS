@@ -8,6 +8,6 @@ function mostrar()
 	Precondicion:
 		-Ninguna.
 	*/
-	let nombre = prompt("Ingrese su nombre:")
+	let nombre = prompt("Ingrese su nombre:");
 	alert(nombre);
 }
