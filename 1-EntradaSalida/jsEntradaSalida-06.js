@@ -7,7 +7,8 @@ function sumar()
 		mostrar el resulto por medio de "ALERT".
 	
 	Precondicion:
-		-Ninguna.
+		-El valor ingresado en txtIdNumeroUno y txtIdNumeroDos deben
+		ser numeros enteros.
 	*/
 
 	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
