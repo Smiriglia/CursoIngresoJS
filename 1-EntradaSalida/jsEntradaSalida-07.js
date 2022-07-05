@@ -7,12 +7,14 @@ function sumar()
 		mostrar el resulto por medio de "ALERT".
 	
 	Precondicion:
-		-Ninguna.
+		-El valor ingresado en txtIdNumeroUno y txtIdNumeroDos deben
+		ser numeros enteros.
 	*/
 
 	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
 	let num1 = parseInt(txtIdNumeroUno.value);
 	let num2 = parseInt(txtIdNumeroDos.value);
+	let resultado;
 
 	//Sumamos los 2 valores obtenidos anteriormente.
 	resultado = num1 + num2;
@@ -30,11 +32,13 @@ function restar()
 		mostrar el resulto por medio de "ALERT".
 	
 	Precondicion:
-		-Ninguna.
+		-El valor ingresado en txtIdNumeroUno y txtIdNumeroDos deben
+		ser numeros enteros.
 	*/
 	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
 	let num1 = parseInt(txtIdNumeroUno.value);
 	let num2 = parseInt(txtIdNumeroDos.value);
+	let resultado;
 
 	//Restamos los 2 valores obtenidos anteriormente.
 	resultado = num1 - num2;
@@ -53,11 +57,13 @@ function multiplicar()
 		mostrar el resulto por medio de "ALERT".
 	
 	Precondicion:
-		-Ninguna.
+		-El valor ingresado en txtIdNumeroUno y txtIdNumeroDos deben
+		ser numeros enteros.
 	*/
 	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
 	let num1 = parseInt(txtIdNumeroUno.value);
 	let num2 = parseInt(txtIdNumeroDos.value);
+	let resultado;
 
 	//multiplicamos los 2 valores obtenidos anteriormente.
 	resultado = num1 * num2;
@@ -74,12 +80,16 @@ function dividir()
 		transformarlos a enteros (parseInt) y Dividirlos.
 		mostrar el resulto por medio de "ALERT".
 	
-	Precondicion:
-		-Ninguna.
+	Precondiciones:
+		-El valor ingresado en txtIdNumeroUno y txtIdNumeroDos deben
+		ser numeros enteros.
+
+		-El valor ingresado en txtIdNumeroDos Debe ser distinto de cero.
 	*/
 	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
 	let num1 = parseInt(txtIdNumeroUno.value);
 	let num2 = parseInt(txtIdNumeroDos.value);
+	let resultado;
 
 	//Dividimos los 2 valores obtenidos anteriormente.
 	resultado = num1 / num2;
