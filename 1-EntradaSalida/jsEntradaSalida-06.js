@@ -14,6 +14,7 @@ function sumar()
 	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
 	let num1 = parseInt(txtIdNumeroUno.value);
 	let num2 = parseInt(txtIdNumeroDos.value);
+	let resultado;
 
 	//Sumamos los 2 valores obtenidos anteriormente.
 	resultado = num1 + num2;
