@@ -1,3 +1,4 @@
+//Smiriglia, Fausto - Div Z
 function mostrar()
 {
 	/*
@@ -8,6 +9,7 @@ function mostrar()
 	Precondicion:
 		-Ninguna
 	*/
+	//Imprime el mensaje en pantalla.
 	alert("Esto funciona de maravilla");
 }
 
