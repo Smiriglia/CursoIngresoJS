@@ -8,10 +8,10 @@ function SacarResto()
 		mostrar el resto entre el dividendo y el divisor.
 		ej.: "El resto es 0 ."
 	Precondiciones:
-		-El valor ingresado en txtIdNumeroUno y txtIdNumeroDos deben
+		-El valor ingresado en txtIdNumeroDividendo y txtIdNumeroDivisor deben
 		ser numeros enteros.
 
-		-El valor ingresado en txtIdNumeroDos Debe ser distinto de cero.
+		-El valor ingresado en txtIdNumeroDivisor Debe ser distinto de cero.
 	*/
 
 	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
