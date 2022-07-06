@@ -9,6 +9,9 @@ function mostrar()
 		-Ninguna
 	*/
 
-	//Toma un valor con el prompt y se lo asigna al valor del textbox.
-	txtIdNombre.value = prompt("Ingrese su nombre:")
+	//Declara una variable asignandole un valor con un prompt y 
+	let nombreIngresado = prompt("Ingrese su nombre:");
+
+	//Se le asigna el valor del textbox el valor de variable ingresada.
+	txtIdNombre.value = nombreIngresado;
 }
