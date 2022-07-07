@@ -1,3 +1,7 @@
+/*
+	Smiriglia, Fausto DIV Z
+	E/S Ejercicio 8
+*/
 function SacarResto()
 {
 	/*
@@ -14,11 +18,15 @@ function SacarResto()
 		-El valor ingresado en txtIdNumeroDivisor Debe ser distinto de cero.
 	*/
 
-	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
-	let dividendo = parseInt(txtIdNumeroDividendo.value);
-	let divisor = parseInt(txtIdNumeroDivisor.value);
+	//Declara las variables
+	let dividendo;
+	let divisor;
 	let resultado;
 
+	//Toma el valor de la textbox, lo convierte el valor de string a numero y lo asigna en una variable .
+	dividendo = parseInt(txtIdNumeroDividendo.value)
+	divisor = parseInt(txtIdNumeroDivisor.value);
+	
 	//Sacamos el resto 2 valores obtenidos anteriormente.
 	resultado = dividendo % divisor;
 
