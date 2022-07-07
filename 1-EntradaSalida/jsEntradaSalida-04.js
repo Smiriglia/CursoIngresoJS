@@ -1,3 +1,7 @@
+/*
+	Smiriglia, Fausto DIV Z
+	E/S Ejercicio 4
+*/
 function mostrar()
 {
 	/* 
