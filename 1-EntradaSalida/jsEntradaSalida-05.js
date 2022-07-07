@@ -1,3 +1,7 @@
+/*
+	Smiriglia, Fausto DIV Z
+	E/S Ejercicio 5
+*/
 function mostrar()
 {
 	/*
@@ -8,9 +12,13 @@ function mostrar()
 	Precondicion:
 		-Ninguna
 	*/
-	//Inicializa las variables con los datos que esten ingresados en sus respectivas textbox
-	let nombre = txtIdNombre.value;
-	let edad = txtIdEdad.value;
+	//Declara las variables
+	let nombre;
+	let edad;
+	
+	//Asigna el valor a las variables,con el valor ingresado en su respectiva textbox
+	nombre = txtIdNombre.value
+	edad = txtIdEdad.value;
 	
 	//Imprime los datos en pantalla concatenando strings
 	alert("Usted se llama " + nombre + " y tiene " + edad + " años");
