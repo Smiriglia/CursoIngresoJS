@@ -16,13 +16,17 @@ function mostrarAumento()
 
 	//declara las variables
 	let sueldo;
+	let porcentajeIngresado;
 	let aumento;
 	let sueldoActualizado;
+
+	porcentajeIngresado = parseFloat(prompt("Ingrese el porcentaje de aumento:"));
+
 	//asigna a la variable el valor de la textbox y convirtiendolo en un float.
 	sueldo = parseFloat(document.getElementById("txtIdSueldo").value);
 
 	//Asigna la variable con el 10%(10/100) de la variable sueldo.
-	aumento = sueldo * 0.1;
+	aumento = sueldo * porcentajeIngresado / 100;
 
 	//asigna la variable con la suma del sueldo con el aumento.
 	sueldoActualizado = sueldo + aumento;

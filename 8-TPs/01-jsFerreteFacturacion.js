@@ -1,19 +1,26 @@
+/*
+	Smiriglia, Fausto DIV Z
+	TPs - Trabajo practico numero 1
+*/
 function Sumar () 
 {
     /*
     Proposito:
         -Ingresar tres precios de productos y mostrar la suma de los mismos.
-
-    Precondicion:
-        -Los valores ingresados en las textbox deben ser de tipo numero.
     */
-    //Inicializa las variables tomando el valor ingresado en las textbox y lo convierte en float.
-    let precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    let precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    let precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    //Declara las variables
+    let precio1;
+    let precio2;
+    let precio3;
+    let resultado;
+
+    //Le asigna a las variables el valor ingresado en las textbox y lo convierte en float.
+    precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
     //Inicializa la variable sumando los valores tomados anteriormente
-    let resultado = precio1 + precio2 + precio3;
+    resultado = precio1 + precio2 + precio3;
 
     //Limita los decimales que tendra el resultado
     resultado = resultado.toFixed(2);
@@ -27,20 +34,24 @@ function Promedio ()
     /*
     Proposito:
         -Ingresar tres precios de productos y mostrar el promedio de los mismos.
-
-    Precondicion:
-        -Los valores ingresados en las textbox deben ser de tipo numero.
     */
-    //Inicializa las variables tomando el valor ingresado en las textbox y lo convierte en float.
-    let precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    let precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    let precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    //Declara las variables
+    let precio1;
+    let precio2;
+    let precio3;
+    let suma;
+    let resultado;
 
-    //Inicializa la variable sumando los valores tomados anteriormente
-    let suma = precio1 + precio2 + precio3;
+    //Le asigna a las variables el valor ingresado en las textbox y lo convierte en float.
+    precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-    //Inicializa la variable sacando un promedio de los valores dados.
-    let resultado = suma / 3;
+    //Se asigna la variable sumando los valores tomados anteriormente
+    suma = precio1 + precio2 + precio3;
+
+    //Se asigna la variable con el resultado de un promedio entre los valores dados.
+    resultado = suma / 3;
 
     //Limita los decimales que tendra el resultado
     resultado = resultado.toFixed(2);
@@ -54,23 +65,27 @@ function PrecioFinal ()
     /*
     Proposito:
         ingresar tres precios de productos  y mostrar precio final (más IVA 21%).
-        
-    Precondicion:
-        -Los valores ingresados en las textbox deben ser de tipo numero.
     */
-    //Inicializa las variables tomando el valor ingresado en las textbox y lo convierte en float.
-    let precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
-    let precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
-    let precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
+    //Declara las variables
+    let precio1;
+    let precio2;
+    let precio3;
+    let suma;
+    let resultado;
 
-    //Inicializa la variable sumando los valores tomados anteriormente
-    let suma = precio1 + precio2 + precio3;
+    //Le asigna a las variables el valor ingresado en las textbox y lo convierte en float.
+    precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
+    precio2 = parseFloat(document.getElementById("txtIdPrecioDos").value);
+    precio3 = parseFloat(document.getElementById("txtIdPrecioTres").value);
 
-    //Inicializa la variable tomando como valor el 21% del valor de la suma dada
-    let aumento = suma * 0.21;
+    //Se Asigna la variable sumando los valores tomados anteriormente
+    suma = precio1 + precio2 + precio3;
 
-    //Inicializa la variable sacando un promedio de los valores dados.
-    let resultado = suma + aumento;
+    //Se asigna la variable tomando como valor el 21% del valor de la suma dada
+    aumento = suma * 0.21;
+
+    //Se asigna la variable sacando un promedio de los valores dados.
+    resultado = suma + aumento;
 
     //Limita los decimales que tendra el resultado
     resultado = resultado.toFixed(2);
