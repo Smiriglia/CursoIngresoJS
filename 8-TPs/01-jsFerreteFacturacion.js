@@ -72,6 +72,7 @@ function PrecioFinal ()
     let precio3;
     let suma;
     let resultado;
+    let aumento;
 
     //Le asigna a las variables el valor ingresado en las textbox y lo convierte en float.
     precio1 = parseFloat(document.getElementById("txtIdPrecioUno").value);
@@ -92,5 +93,4 @@ function PrecioFinal ()
     
     //Imprime el resultado en pantalla
     alert("El precio final es: $" + resultado);
-	
 }
