@@ -1,3 +1,7 @@
+/*
+	Smiriglia, Fausto DIV Z
+	E/S Ejercicio 6
+*/
 function sumar()
 {	
 	/*
@@ -84,7 +88,7 @@ function dividir()
 		transformarlos a enteros (parseInt) y Dividirlos.
 		mostrar el resulto por medio de "ALERT".
 	*/
-	
+
 	//Declara las variables
 	let num1;
 	let num2;
