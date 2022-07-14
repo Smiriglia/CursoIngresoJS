@@ -16,7 +16,7 @@ function mostrar()
 	{
 		alert("Sos un adulto");
 	}
-	else if (edadIngresada > 12 && edadIngresada < 18) 
+	else if (edadIngresada > 12) 
 	{
 		alert("Sos un adolescente");
 	}
@@ -24,5 +24,4 @@ function mostrar()
 	{
 		alert("Sos un niño");
 	}
-
 }
