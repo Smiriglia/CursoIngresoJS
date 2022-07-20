@@ -24,10 +24,11 @@ function CalcularPrecio ()
 {
  	let cantidad;
     let marcaIngresada;
-    const PRECIOINICIAL = 35;
-    let precioTotal;
+    let precioInicial;
     let precioFinal;
     let ingresosBrutos;
+    let porcentajeDeDescuento;
+    let descuento;
     
 
     cantidad = document.getElementById("txtIdCantidad").value;
@@ -35,26 +36,23 @@ function CalcularPrecio ()
 
     marcaIngresada = document.getElementById("Marca").value;
 
-    precioTotal = cantidad * PRECIOINICIAL;
+    precioInicial = cantidad * 35;
 
     //A
     if(cantidad > 5)
     {
-        descuento = porcentaje(precioTotal, 50);
-        precioFinal =  precioTotal - descuento;
+        porcentajeDeDescuento = 50;
     }
     //B
     else if(cantidad == 5)
     {
         if (marcaIngresada == "ArgentinaLuz")
         {
-            descuento = porcentaje(precioTotal, 40);
-            precioFinal =  precioTotal - descuento;
+            porcentajeDeDescuento = 40;
         }
         else
         {
-            descuento = porcentaje(precioTotal, 30);
-            precioFinal =  precioTotal - descuento;
+            porcentajeDeDescuento = 30;
         }
     }
     //C
@@ -62,13 +60,11 @@ function CalcularPrecio ()
     {
         if (marcaIngresada == "ArgentinaLuz" || marcaIngresada == "FelipeLamparas")
         {
-            descuento = porcentaje(precioTotal, 25);
-            precioFinal =  precioTotal - descuento;
+            porcentajeDeDescuento = 25;
         }
         else
         {
-            descuento = porcentaje(precioTotal, 20);
-            precioFinal =  precioTotal - descuento;
+            porcentajeDeDescuento = 20;
         }
     }
     //D
@@ -76,40 +72,32 @@ function CalcularPrecio ()
     {
         if(marcaIngresada == "ArgentinaLuz")
         {
-            descuento = porcentaje(precioTotal, 15);
-            precioFinal =  precioTotal - descuento;
+            porcentajeDeDescuento = 15;
         }
         else if(marcaIngresada == "FelipeLamparas")
         {
-            descuento = porcentaje(precioTotal, 10);
-            precioFinal =  precioTotal - descuento;
+            porcentajeDeDescuento = 10;
         }
         else
         {
-            descuento = porcentaje(precioTotal, 5);
-            precioFinal =  precioTotal - descuento;
+            porcentajeDeDescuento = 5;
         }
     }
     else
     {
-        descuento = 0;
-        precioFinal = precioTotal;
+        porcentajeDeDescuento = 0;
     }
+
+    descuento = precioInicial * porcentajeDeDescuento / 100;
+    precioFinal =  precioInicial - porcentajeDeDescuento;
+    
     //E
     if(precioFinal > 120)
     {
-        ingresosBrutos = porcentaje(precioFinal, 10);
+        ingresosBrutos = precioFinal * 10 / 100;
         precioFinal = precioFinal + ingresosBrutos;
         alert(`Usted pago ${ingresosBrutos.toFixed(2)} $ de IIBB.`)
     }
 
     txtIdprecioDescuento.value = precioFinal.toFixed(2);
-}
-function porcentaje(precio, porcentaje)
-{
-    /*
-    Proposito:
-        Devuelve el porcentaje dado del precio dado.
-    */
-    return(precio * porcentaje/100);
 }
