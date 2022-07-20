@@ -15,30 +15,15 @@ function mostrar()
 	{
 		//Antes de invierno
 		case "Enero":
-			mensaje = "Falta para el invierno.";
-			break;
-		
 		case "Febrero":
-			mensaje = "Falta para el invierno.";
-			break;
-		
 		case "Marzo":
-			mensaje = "Falta para el invierno.";
-			break;
-		
 		case "Abril":
-			mensaje = "Falta para el invierno.";
-			break;
-		
+		case "Mayo":
 		case "Junio":
 			mensaje = "Falta para el invierno.";
 			break;
-
 		//Invierno
 		case "Julio":
-			mensaje = "Abrigate que hace frio.";
-			break;
-		
 		case "Agosto":
 			mensaje = "Abrigate que hace frio.";
 			break;
@@ -50,8 +35,4 @@ function mostrar()
 
 	}
 	alert(mensaje);
-
-
-
-
 }//FIN DE LA FUNCIÓN
