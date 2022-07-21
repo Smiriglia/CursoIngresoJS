@@ -13,17 +13,82 @@ hasta que el usuario quiera, mostrar:
 function mostrar()
 {
 	//declarar contadores y variables 
-	var respuesta;
-	var numeroIngresado;
-	var sumaNegativos=0;
+	let respuesta;
+	let numeroIngresado;
+	let sumaNegativos;
+	let sumaPositivos;
+	let cantidadNegativos;
+	let cantidadPositivos;
+	let cantidadCeros;
+	let cantidadPares;
+	let promedioPositivos;
+	let promedioNegativos;
+	let diferencia;
 
-	respuesta="si";
+	sumaNegativos = 0;
+	sumaPositivos = 0;
+	cantidadNegativos = 0;
+	cantidadPositivos = 0;
+	cantidadCeros = 0;
+	cantidadPares = 0;
 
-	while(respuesta=="si")
+	respuesta = "si";
+
+	while(respuesta == "si")
 	{
-		
-		respuesta=prompt("desea continuar?");
-	}//fin del while
+		numeroIngresado = prompt("Ingrese un numero:");
+		numeroIngresado = parseInt(numeroIngresado);
 
-	document.write("la suma de negativos es :"+sumaNegativos);
+		if(numeroIngresado > 0)
+		{
+			sumaPositivos = sumaPositivos + numeroIngresado;
+			cantidadPositivos++;
+
+		}
+		else
+		{
+			if(numeroIngresado == 0)
+			{
+				cantidadCeros++;
+			}
+			else
+			{
+				sumaNegativos = sumaNegativos + numeroIngresado;
+				cantidadNegativos++; 
+			}
+		}
+		if(numeroIngresado % 2 == 0)
+		{
+			cantidadPares++;
+		}
+		respuesta = prompt("Quiere seguir ingresando numeros: (si | no)");
+	}//fin del while
+	if(cantidadPositivos != 0)
+	{
+		promedioPositivos = sumaPositivos / cantidadPositivos;
+	}
+	else
+	{
+		promedioPositivos = 0;//No hay
+	}
+	if(cantidadNegativos != 0)
+	{
+		promedioNegativos = sumaNegativos / cantidadNegativos;
+	}
+	else
+	{
+		promedioNegativos = 0;//No hay
+	}
+
+	diferencia = sumaPositivos - sumaNegativos;
+
+	console.log("1 - Suma de los negativos: " + sumaNegativos);
+	console.log("2 - Suma de los positivos: " + sumaPositivos);
+	console.log("3 - Cantidad de positivos: " + cantidadPositivos);
+	console.log("4 - Cantidad de negativos: " + cantidadNegativos);
+	console.log("5 - Cantidad de ceros: " + cantidadCeros);
+	console.log("6 - Cantidad de numeros pares: " + cantidadPares);
+	console.log("7 - Promedio positivos: " + promedioPositivos.toFixed(2));
+	console.log("8 - Promedio Negativos: " + promedioNegativos.toFixed(2));
+	console.log("9 - Diferencia entre positivos y negativos: " + diferencia);
 }//FIN DE LA FUNCIÓN
