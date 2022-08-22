@@ -2,14 +2,22 @@ var miIntervalo ;
 
 function inicio()
 {	
+	let c;
 	alert("function inicio.");
-	miIntervalo = setInterval(SegundosEnElAire, 3000);
+	miIntervalo = setTimeout(SegundosEnElAire, 17);
+	while(i < 60)
+	{
+		confirm("xd");
+		c++;
+	}
+	alert(c);
+	
 	
 }//FIN DE LA FUNCIÓN inicio
 
 function SegundosEnElAire() {
 
-    alert("Bienvenido a la UTN FRA");
+    i++;
 
 }//FIN DE LA FUNCIÓN SegundosEnElAire
 

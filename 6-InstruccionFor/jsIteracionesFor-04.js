@@ -3,13 +3,18 @@ al presionar el botón repetir hasta que utilizamos 'BREAK'.
 */
 function mostrar()
 {
-	let contador;
+	let brake;
+
+	brake = true;
 	contador = 0;
-	do
+
+	for(;;)
 	{
-		console.log(contador);
-		contador++;
-	}while(contador >0);
+		brake = prompt("Ingrese BREAK");
+		if(brake == "BREAK")
+		{
+			break;
+		}
+	}
 
-
-}//FIN DE LA FUNCIÓN
+}
